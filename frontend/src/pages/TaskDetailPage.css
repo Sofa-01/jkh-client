@@ -1,0 +1,118 @@
+/* frontend/src/pages/coordinator/TaskDetailPage.css */
+
+.task-detail-page {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-detail-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.task-detail-page .page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.task-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-card p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #555;
+}
+
+.info-card p strong {
+  color: #333;
+}
+
+.task-actions-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.task-actions-section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.action-buttons-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-action:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.btn-action:disabled {
+  background-color: #a0c8f5;
+  cursor: not-allowed;
+}
+
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .task-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
